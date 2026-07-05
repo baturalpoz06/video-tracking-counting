@@ -34,7 +34,6 @@ frames) is at least `MIN_TRACK_AGE`.
 `MIN_TRACK_AGE = 30` (30 frames = 1 second at 30 FPS) was chosen from the track-age
 distribution: it brings the filtered count closest to ground truth without
 discarding genuine short appearances.
-
 Because a track's full lifetime is only known after the whole video is seen, the
 script uses a **two-pass** design:
 
@@ -88,3 +87,4 @@ pipeline.
   not committed to the repo.
 - The output video is excluded from the repo (file-size limits); see the
   screenshots below for sample output.
+![Sample output](demo_output.png)
